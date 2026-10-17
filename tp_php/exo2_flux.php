@@ -127,18 +127,19 @@ $k=1 ;
 while (true) {
     switch ($k) {
         case 5 :
-            echo"At 5";
-            echo"<br>";
+            echo"At 5 <br>";
+
             break;
         case 10 :
-            echo"At 10; quitting";
-            echo"<br>";
+            echo"At 10; quitting <br>";
+
             break 2;
         
         default:
-            echo "" ;
+            echo $k."<br>" ;
             break;
     }
+    $k++;
 }
 echo"<br>";
 //5-

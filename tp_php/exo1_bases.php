@@ -1,4 +1,11 @@
-<?php echo 'Hello PHP <br>';
+<?php 
+/*
+    -Auteur : Hajar Raguiti 
+    -Objectif :  manipuler les types
+    -Date : 17-10-2026
+ */
+echo"<h1>Partie 1 : Variables, constantes, types et chaînes</h1>";
+echo 'Hello PHP <br>';
 
 //c'est un commentaire 
 # c'est un commentaire 
@@ -10,6 +17,7 @@ c'est un commentaire
 
 //Partie 1
 ###Exercice 1.1
+echo"<h2>Exercice 1.1 : Noms de variables</h2>" ;
 #Les variables valides sont : 
 //$x : contien un lettre 
 // $_x : commence par tiret bas 
@@ -29,6 +37,7 @@ echo $A."<br>" ;
 // resultat : deux valeurs differant ; php est sensible à la cass .
 echo "<br>";
 ###Exercice1.2
+echo"<h2>Exercice 1.2 : Constantes</h2>" ;
 require 'config.php';
 
 echo "ETABLISSEMENT : ".ETABLISSEMENT."<br>";
@@ -54,6 +63,7 @@ else {
 */
 echo "<br>";
 ###Exercice1.3  
+echo"<h2>Exercice 1.3 : Calcul</h2>" ;
 
 $prix_ht = 60;
 $tva = 20;
@@ -62,6 +72,8 @@ echo "Le prix TTC du produit est de ".$prix_TTC." €.<br>";
 echo "<br>";
 
 ###Exercice1.4  
+echo"<h2>Exercice 1.4 : Types et conversions</h2>" ;
+
 $test = 42   ;
 $test = (string) $test ;
 var_dump($test);
@@ -102,6 +114,8 @@ echo"255 en binaire : ".$bin."<br>";
 echo "<br><br>";
 
 ###Exercice1.5 
+echo"<h2>Exercice 1.5 : Chaînes de caractères</h2>" ;
+
 $traitees = "égales à";
 $ici = 2 ; 
 echo "Ahmed a dit : J ai réussi <br>";
