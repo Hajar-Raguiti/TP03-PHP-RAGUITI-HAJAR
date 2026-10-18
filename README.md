@@ -8,7 +8,7 @@ TP 03 PHP — Programmation Web 2 — 2026/2027
 | tp_php/  | 
 | `config.php`  | 
 | includes / `entete_inc.php` et  `menu_inc.php` et `pied_inc.php`|
-| data/ (vid en ce moment )|| `config.php`  |
+| data/ (vid en ce moment ) |
 | `exo1_bases.php`  |
 | `exo2_flux.php`  |
 | `exo3_tableaux.php`  |
