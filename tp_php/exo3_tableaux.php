@@ -4,7 +4,14 @@
     -Objectif :  manipuler les tableaux indexés et associatifs.
     -Date : 18-10-2026
  */
-echo"<h1>Partie 3 : Tableaux </h1>";
+include 'includes/entete_inc.php';
+/*
+Experience 1 : 'include'genere un 'warning' et continue l'execution
+'require'  genere 'fatal Error' et arrete l'execution .
+Experience 2 :  par include , l'instruction s'execute deux fois , mais par include_once ; il ne l'execute pas autre fois
+*/
+include 'includes/menu_inc.php';
+    echo"<h1>Partie 3 : Tableaux </h1>";
 
 ###Exercice 3.1 :
 echo"<h2>Exercice 3.1 : Création</h2>" ;
@@ -153,4 +160,5 @@ var_dump($a == $b); //true
 echo"<br>";
 var_dump($a === $b);//false
 
+include 'includes/pied_inc.php';
 ?>
