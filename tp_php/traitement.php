@@ -2,7 +2,10 @@
 /*
     -Auteur : Hajar Raguiti 
     -Objectif :  traiter un formulaire HTML avec $_GET, $_POST, $_REQUEST
-    -Date : 21-10-2026
+    &lire et écrire des fichiers texte et CSV;
+    -Dates : 21-10-2026
+            23-10-2026
+
  */
 ?>
 
@@ -18,6 +21,16 @@ if ( isset($_POST['nom'], $_POST['note_info'], $_POST['note_math']) &&
         $note_math >= NOTE_MIN && $note_math <= NOTE_MAX) {
         
         $moyenne = ($note_info + $note_math) / 2;
+        //====Partie 5 : Ajout CSV ===
+        $fichier_csv = 'data/notes.csv' ;
+        $fichier = fopen($fichier_csv, 'a') ;
+        if ($fichier !== false) {
+            $donnees = [$nom,$note_info,$note_math];
+            fputcsv($fichier, $donnees, ';');
+            fclose($fichier);
+        }
+        //Question : Question : que se passerait-il avec le mode "w" au lieu de "a" ?
+        //Rep : le contenu du fichier sera ecrasé 
 
         echo "<h2>Récapitulatif des notes</h2>";
         echo "Nom :$nom <br>";
